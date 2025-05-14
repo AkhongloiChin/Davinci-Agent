@@ -1,0 +1,91 @@
+prompt,image_path,clip_score,human_score
+A crystal-clear lake under the northern lights,clip_feedback_dataset/A_crystal-clear_lake_under_the_0.png,0.2886303663253784,0.8
+A crystal-clear lake under the northern lights,clip_feedback_dataset/A_crystal-clear_lake_under_the_1.png,0.2884664535522461,0.82
+A crystal-clear lake under the northern lights,clip_feedback_dataset/A_crystal-clear_lake_under_the_2.png,0.2914332151412964,0.83
+A lush rainforest filled with glowing mushrooms,clip_feedback_dataset/A_lush_rainforest_filled_with__0.png,0.3534048199653625,0.5
+A lush rainforest filled with glowing mushrooms,clip_feedback_dataset/A_lush_rainforest_filled_with__1.png,0.3663323223590851,0.7
+A lush rainforest filled with glowing mushrooms,clip_feedback_dataset/A_lush_rainforest_filled_with__2.png,0.3412261009216308,0.6
+A desert landscape with floating boulders,clip_feedback_dataset/A_desert_landscape_with_floati_0.png,0.3519379496574402,0.5
+A desert landscape with floating boulders,clip_feedback_dataset/A_desert_landscape_with_floati_1.png,0.3491433262825012,0.48
+A desert landscape with floating boulders,clip_feedback_dataset/A_desert_landscape_with_floati_2.png,0.3620835542678833,0.51
+A snow-covered forest at dawn,clip_feedback_dataset/A_snow-covered_forest_at_dawn_0.png,0.3201196789741516,0.85
+A snow-covered forest at dawn,clip_feedback_dataset/A_snow-covered_forest_at_dawn_1.png,0.3350240588188171,0.86
+A snow-covered forest at dawn,clip_feedback_dataset/A_snow-covered_forest_at_dawn_2.png,0.3563939929008484,0.83
+An underwater city with glowing coral towers,clip_feedback_dataset/An_underwater_city_with_glowin_0.png,0.3675554990768432,0.88
+An underwater city with glowing coral towers,clip_feedback_dataset/An_underwater_city_with_glowin_1.png,0.3459135890007019,0.85
+An underwater city with glowing coral towers,clip_feedback_dataset/An_underwater_city_with_glowin_2.png,0.2846840620040893,0.7
+A robot playing chess with a human in a neon-lit room,clip_feedback_dataset/A_robot_playing_chess_with_a_h_0.png,0.3053864240646362,0.4
+A robot playing chess with a human in a neon-lit room,clip_feedback_dataset/A_robot_playing_chess_with_a_h_1.png,0.3360970616340637,0.3
+A robot playing chess with a human in a neon-lit room,clip_feedback_dataset/A_robot_playing_chess_with_a_h_2.png,0.2877354919910431,0.42
+A futuristic city powered by solar wind,clip_feedback_dataset/A_futuristic_city_powered_by_s_0.png,0.2872436642646789,0.45
+A futuristic city powered by solar wind,clip_feedback_dataset/A_futuristic_city_powered_by_s_1.png,0.29302579164505,0.28
+A futuristic city powered by solar wind,clip_feedback_dataset/A_futuristic_city_powered_by_s_2.png,0.2812337875366211,0.4
+Flying cars zipping between glass skyscrapers at sunset,clip_feedback_dataset/Flying_cars_zipping_between_gl_0.png,0.3587363064289093,0.6
+Flying cars zipping between glass skyscrapers at sunset,clip_feedback_dataset/Flying_cars_zipping_between_gl_1.png,0.2577191591262817,0.3
+Flying cars zipping between glass skyscrapers at sunset,clip_feedback_dataset/Flying_cars_zipping_between_gl_2.png,0.2941105365753174,0.7
+An alien marketplace with colorful alien creatures,clip_feedback_dataset/An_alien_marketplace_with_colo_0.png,0.3572360873222351,0.5
+An alien marketplace with colorful alien creatures,clip_feedback_dataset/An_alien_marketplace_with_colo_1.png,0.3618733286857605,0.7
+An alien marketplace with colorful alien creatures,clip_feedback_dataset/An_alien_marketplace_with_colo_2.png,0.3247426152229309,0.6
+A space station orbiting a binary star system,clip_feedback_dataset/A_space_station_orbiting_a_bin_0.png,0.2982435822486877,0.6
+A space station orbiting a binary star system,clip_feedback_dataset/A_space_station_orbiting_a_bin_1.png,0.2569577693939209,0.4
+A space station orbiting a binary star system,clip_feedback_dataset/A_space_station_orbiting_a_bin_2.png,0.3243656456470489,0.45
+A melting clock hanging from a tree branch (Dali style),clip_feedback_dataset/A_melting_clock_hanging_from_a_0.png,0.3036582469940185,0.4
+A melting clock hanging from a tree branch (Dali style),clip_feedback_dataset/A_melting_clock_hanging_from_a_1.png,0.3344679474830627,0.34
+A melting clock hanging from a tree branch (Dali style),clip_feedback_dataset/A_melting_clock_hanging_from_a_2.png,0.3121944963932037,0.88
+A cat made of galaxies floating in space,clip_feedback_dataset/A_cat_made_of_galaxies_floatin_0.png,0.3437817394733429,0.6
+A cat made of galaxies floating in space,clip_feedback_dataset/A_cat_made_of_galaxies_floatin_1.png,0.3025889992713928,0.1
+A cat made of galaxies floating in space,clip_feedback_dataset/A_cat_made_of_galaxies_floatin_2.png,0.3452599346637726,0.5
+A violin turning into a tree,clip_feedback_dataset/A_violin_turning_into_a_tree_0.png,0.34111487865448,0.41
+A violin turning into a tree,clip_feedback_dataset/A_violin_turning_into_a_tree_1.png,0.3381646275520324,0.35
+A violin turning into a tree,clip_feedback_dataset/A_violin_turning_into_a_tree_2.png,0.288485586643219,0.3
+A bridge made of light stretching across the sky,clip_feedback_dataset/A_bridge_made_of_light_stretch_0.png,0.2685841917991638,0.28
+A bridge made of light stretching across the sky,clip_feedback_dataset/A_bridge_made_of_light_stretch_1.png,0.2872479856014251,0.44
+A bridge made of light stretching across the sky,clip_feedback_dataset/A_bridge_made_of_light_stretch_2.png,0.258144199848175,0.36
+A room where gravity works in reverse,clip_feedback_dataset/A_room_where_gravity_works_in__0.png,0.2361793518066406,0.2
+A room where gravity works in reverse,clip_feedback_dataset/A_room_where_gravity_works_in__1.png,0.2931827902793884,0.32
+A room where gravity works in reverse,clip_feedback_dataset/A_room_where_gravity_works_in__2.png,0.2620004415512085,0.24
+A dragon curled up in a library,clip_feedback_dataset/A_dragon_curled_up_in_a_librar_0.png,0.3702400326728821,0.67
+A dragon curled up in a library,clip_feedback_dataset/A_dragon_curled_up_in_a_librar_1.png,0.3556269407272339,0.65
+A dragon curled up in a library,clip_feedback_dataset/A_dragon_curled_up_in_a_librar_2.png,0.3144726753234863,0.4
+A fox wearing a wizard hat under a full moon,clip_feedback_dataset/A_fox_wearing_a_wizard_hat_und_0.png,0.3786300420761108,0.7
+A fox wearing a wizard hat under a full moon,clip_feedback_dataset/A_fox_wearing_a_wizard_hat_und_1.png,0.3691186308860779,0.75
+A fox wearing a wizard hat under a full moon,clip_feedback_dataset/A_fox_wearing_a_wizard_hat_und_2.png,0.3335000872611999,0.6
+A giant whale flying through the clouds,clip_feedback_dataset/A_giant_whale_flying_through_t_0.png,0.2518069744110107,0.34
+A giant whale flying through the clouds,clip_feedback_dataset/A_giant_whale_flying_through_t_1.png,0.2792403101921081,0.5
+A giant whale flying through the clouds,clip_feedback_dataset/A_giant_whale_flying_through_t_2.png,0.3148306608200073,0.26
+A group of penguins dancing in tuxedos,clip_feedback_dataset/A_group_of_penguins_dancing_in_0.png,0.340524673461914,0.45
+A group of penguins dancing in tuxedos,clip_feedback_dataset/A_group_of_penguins_dancing_in_1.png,0.3380674123764038,0.43
+A group of penguins dancing in tuxedos,clip_feedback_dataset/A_group_of_penguins_dancing_in_2.png,0.3252770900726318,0.42
+A unicorn drinking tea in a meadow,clip_feedback_dataset/A_unicorn_drinking_tea_in_a_me_0.png,0.3436188101768493,0.53
+A unicorn drinking tea in a meadow,clip_feedback_dataset/A_unicorn_drinking_tea_in_a_me_1.png,0.3514770269393921,0.75
+A unicorn drinking tea in a meadow,clip_feedback_dataset/A_unicorn_drinking_tea_in_a_me_2.png,0.3250563144683838,0.49
+A cyberpunk samurai walking through rain,clip_feedback_dataset/A_cyberpunk_samurai_walking_th_0.png,0.3550853729248047,0.4
+A cyberpunk samurai walking through rain,clip_feedback_dataset/A_cyberpunk_samurai_walking_th_1.png,0.3026199340820312,0.54
+A cyberpunk samurai walking through rain,clip_feedback_dataset/A_cyberpunk_samurai_walking_th_2.png,0.3776518702507019,0.52
+A medieval knight in futuristic armor,clip_feedback_dataset/A_medieval_knight_in_futuristi_0.png,0.3202426731586456,0.43
+A medieval knight in futuristic armor,clip_feedback_dataset/A_medieval_knight_in_futuristi_1.png,0.3135911524295807,0.44
+A medieval knight in futuristic armor,clip_feedback_dataset/A_medieval_knight_in_futuristi_2.png,0.3138971924781799,0.49
+A painter with a floating paintbrush painting the sky,clip_feedback_dataset/A_painter_with_a_floating_pain_0.png,0.346583217382431,0.63
+A painter with a floating paintbrush painting the sky,clip_feedback_dataset/A_painter_with_a_floating_pain_1.png,0.3323171734809875,0.52
+A painter with a floating paintbrush painting the sky,clip_feedback_dataset/A_painter_with_a_floating_pain_2.png,0.3495631814002991,0.58
+A child flying with paper wings,clip_feedback_dataset/A_child_flying_with_paper_wing_0.png,0.2871460914611816,0.42
+A child flying with paper wings,clip_feedback_dataset/A_child_flying_with_paper_wing_1.png,0.3567864000797272,0.45
+A child flying with paper wings,clip_feedback_dataset/A_child_flying_with_paper_wing_2.png,0.3564309477806091,0.54
+An elderly astronaut looking at Earth from the Moon,clip_feedback_dataset/An_elderly_astronaut_looking_a_0.png,0.2802140116691589,0.4
+An elderly astronaut looking at Earth from the Moon,clip_feedback_dataset/An_elderly_astronaut_looking_a_1.png,0.2261810302734375,0.2
+An elderly astronaut looking at Earth from the Moon,clip_feedback_dataset/An_elderly_astronaut_looking_a_2.png,0.285552054643631,0.3
+A treehouse village lit by lanterns,clip_feedback_dataset/A_treehouse_village_lit_by_lan_0.png,0.3594488203525543,0.8
+A treehouse village lit by lanterns,clip_feedback_dataset/A_treehouse_village_lit_by_lan_1.png,0.334587812423706,0.4
+A treehouse village lit by lanterns,clip_feedback_dataset/A_treehouse_village_lit_by_lan_2.png,0.3421383202075958,0.77
+A mirror palace floating on water,clip_feedback_dataset/A_mirror_palace_floating_on_wa_0.png,0.3166384100914001,0.44
+A mirror palace floating on water,clip_feedback_dataset/A_mirror_palace_floating_on_wa_1.png,0.2922916412353515,0.39
+A mirror palace floating on water,clip_feedback_dataset/A_mirror_palace_floating_on_wa_2.png,0.3612962663173675,0.47
+A spiral staircase disappearing into the clouds,clip_feedback_dataset/A_spiral_staircase_disappearin_0.png,0.2964353561401367,0.22
+A spiral staircase disappearing into the clouds,clip_feedback_dataset/A_spiral_staircase_disappearin_1.png,0.34072145819664,0.28
+A spiral staircase disappearing into the clouds,clip_feedback_dataset/A_spiral_staircase_disappearin_2.png,0.2756365239620209,0.33
+A bamboo forest with glowing trails,clip_feedback_dataset/A_bamboo_forest_with_glowing_t_0.png,0.3231953680515289,0.45
+A bamboo forest with glowing trails,clip_feedback_dataset/A_bamboo_forest_with_glowing_t_1.png,0.3095639944076538,0.32
+A bamboo forest with glowing trails,clip_feedback_dataset/A_bamboo_forest_with_glowing_t_2.png,0.3272239863872528,0.45
+A minimal zen garden on Mars,clip_feedback_dataset/A_minimal_zen_garden_on_Mars_0.png,0.3202709257602691,0.19
+A minimal zen garden on Mars,clip_feedback_dataset/A_minimal_zen_garden_on_Mars_1.png,0.3353664875030517,0.17
+A minimal zen garden on Mars,clip_feedback_dataset/A_minimal_zen_garden_on_Mars_2.png,0.3275010585784912,0.18
