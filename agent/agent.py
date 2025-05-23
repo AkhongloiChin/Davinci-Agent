@@ -191,22 +191,8 @@ workflow.add_conditional_edges("route_image", route_image, {
     "genimage": "genimage"
 })
 
-# End edges
 workflow.add_edge("editimage", END)
 workflow.add_edge("genimage", END)
 
 # Compile
 app = workflow.compile()
-
-test_input = {
-    "prompt": "",
-    "context": "A dog in a swimming pool",
-    "prev_context": "",
-    "prev_image": "https://res.cloudinary.com/dhl5xvai0/image/upload/v1748001937/lora_outputs/xitpxksurmjgyy3jzw9g.png",
-    "query": "make the water green",
-    "task_type": "",
-    "questions": []
-}
-output = app.invoke(test_input)
-#output = query_process(test_input)
-print(output)
