@@ -15,7 +15,7 @@ def gen_image(prompt):
     # === Load base model ===
     base_model = StableDiffusionPipeline.from_pretrained(
         "runwayml/stable-diffusion-v1-5",
-        #torch_dtype=torch.float16
+        torch_dtype=torch.float16
     ).to(device)
 
     # === Load LoRA weights ===

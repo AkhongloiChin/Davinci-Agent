@@ -5,7 +5,9 @@ from langchain_community.chat_models import ChatOllama
 from langchain.prompts import PromptTemplate
 from langgraph.graph import END, StateGraph
 from langchain_core.output_parsers import JsonOutputParser
-
+from langchain.llms import HuggingFacePipeline
+import torch
+import transformers
 from edit_model import edit_image
 from gen_model import gen_image
 
@@ -15,9 +17,16 @@ tracing = os.environ.get("LANGCHAIN_TRACING_V2", "false")
 project = os.environ.get("LANGCHAIN_PROJECT", "Default Project")
 api_key = os.environ.get("LANGCHAIN_API_KEY")
 
+pipe = transformers.pipeline(
+    "text-generation",
+    model="meta-llama/Meta-Llama-Guard-2-8B",
+    device=0 
+)
+llama3 = HuggingFacePipeline(pipeline=pipe)
+
 # Define local LLM
-local_llm = 'llama3'
-llama3 = ChatOllama(model=local_llm, temperature=0)
+#local_llm = 'llama3'
+#llama3 = ChatOllama(model=local_llm, temperature=0)
 
 # Graph state structure
 class GraphState(TypedDict):
@@ -148,8 +157,8 @@ def editing_image(state: GraphState) -> GraphState:
     prev_image_url = state["prev_image"]
     edit_prompt = state["prompt"]
 
-    new_image_url = edit_image(prev_image_url, edit_prompt)
-    #new_image_url = 'it worked'
+    #new_image_url = edit_image(prev_image_url, edit_prompt)
+    new_image_url = 'it worked'
     print(f"Editing image {prev_image_url} with: {edit_prompt}")
     return {
         **state,
@@ -160,8 +169,8 @@ def editing_image(state: GraphState) -> GraphState:
 def generate_image(state: GraphState) -> GraphState:
     gen_prompt = state["prompt"]
 
-    new_image_url = gen_image(gen_prompt)
-    #new_image_url = 'it worked'
+    #new_image_url = gen_image(gen_prompt)
+    new_image_url = 'it worked'
     print(f"Generating image with: {gen_prompt}")
     return {
         **state,
@@ -196,17 +205,18 @@ workflow.add_edge("editimage", END)
 workflow.add_edge("genimage", END)
 
 # Compile
-app = workflow.compile()
+graph = workflow.compile()
+
 
 test_input = {
     "prompt": "",
-    "context": "A dog in a swimming pool",
+    "context": "",
     "prev_context": "",
-    "prev_image": "https://res.cloudinary.com/dhl5xvai0/image/upload/v1748001937/lora_outputs/xitpxksurmjgyy3jzw9g.png",
-    "query": "make the water green",
+    "prev_image": "",
+    "query": "A dog in a swimming pool",
     "task_type": "",
     "questions": []
 }
-output = app.invoke(test_input)
+output = graph.invoke(test_input)
 #output = query_process(test_input)
 print(output)

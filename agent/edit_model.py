@@ -20,9 +20,9 @@ def edit_image(cloudinary_url, prompt):
 
     pipe = StableDiffusionInstructPix2PixPipeline.from_pretrained(
         "timbrooks/instruct-pix2pix",
-        #torch_dtype=torch.float16,
+        torch_dtype=torch.float16,
         safety_checker=None
-    )#.to("cuda")
+    ).to("cuda")
 
     output = pipe(prompt, image=input_image)
     generated_image = output.images[0]  
