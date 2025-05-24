@@ -28,6 +28,7 @@ llama3 = HuggingFacePipeline(pipeline=pipe)
 #local_llm = 'llama3'
 #llama3 = ChatOllama(model=local_llm, temperature=0)
 
+
 # Graph state structure
 class GraphState(TypedDict):
     prompt: str
@@ -144,7 +145,7 @@ def prompt_gen(state: GraphState) -> GraphState:
     
     result = llama3.invoke(input_text)
     parsed = parser.invoke(result.content)
-
+    print(parsed['prompt'])
     return {
         **state,
         "task_type": parsed["task_type"],
@@ -157,8 +158,8 @@ def editing_image(state: GraphState) -> GraphState:
     prev_image_url = state["prev_image"]
     edit_prompt = state["prompt"]
 
-    #new_image_url = edit_image(prev_image_url, edit_prompt)
-    new_image_url = 'it worked'
+    new_image_url = edit_image(prev_image_url, edit_prompt)
+    #new_image_url = 'it worked'
     print(f"Editing image {prev_image_url} with: {edit_prompt}")
     return {
         **state,
@@ -169,8 +170,8 @@ def editing_image(state: GraphState) -> GraphState:
 def generate_image(state: GraphState) -> GraphState:
     gen_prompt = state["prompt"]
 
-    #new_image_url = gen_image(gen_prompt)
-    new_image_url = 'it worked'
+    new_image_url = gen_image(gen_prompt)
+    #new_image_url = 'it worked'
     print(f"Generating image with: {gen_prompt}")
     return {
         **state,
@@ -200,23 +201,47 @@ workflow.add_conditional_edges("route_image", route_image, {
     "genimage": "genimage"
 })
 
-# End edges
 workflow.add_edge("editimage", END)
 workflow.add_edge("genimage", END)
 
 # Compile
-graph = workflow.compile()
+app = workflow.compile()
 
 
-test_input = {
+import gradio as gr
+
+# Initial global state (could later be per-session for chat-style apps)
+global_state = {
     "prompt": "",
     "context": "",
     "prev_context": "",
-    "prev_image": "",
-    "query": "A dog in a swimming pool",
+    "prev_image": "",  # Could point to a placeholder or be empty initially
+    "query": "",
     "task_type": "",
     "questions": []
 }
-output = graph.invoke(test_input)
-#output = query_process(test_input)
-print(output)
+
+def process_query_full(user_query):
+    state = global_state.copy()
+    state["query"] = user_query
+    result_state = app.invoke(state)
+    global_state.update(result_state)
+    
+    img_url = result_state["prev_image"]
+    context_log = result_state["prompt"]
+    return img_url, context_log
+
+
+demo = gr.Interface(
+    fn=process_query_full,
+    inputs=gr.Textbox(label="Enter your image request or edit command"),
+    outputs=[
+        gr.Image(type="filepath", label="Image"),
+        gr.Textbox(label="Context History", lines=10)
+    ],
+    title="Smart Image Assistant",
+    description="Uses LangGraph to understand and track image instructions."
+)
+
+demo.launch()
+
