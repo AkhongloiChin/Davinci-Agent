@@ -63,6 +63,9 @@ pip install -r inference/requirements.txt
 
 ### Environment Setup
 
+- Download [Ollama](https://ollama.com)  
+- Run: `ollama pull llama3`  
+
 You'll need API keys for:
 
 * Cloudinary
